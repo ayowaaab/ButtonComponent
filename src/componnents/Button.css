@@ -1,12 +1,5 @@
-:root{
-    --blackDef :#3F3F3F ;
-    --blackDef_BG :#E0E0E0 ;
-    --blackDef_BG_hover :#AEAEAE ;
-}
-.btn{
-    color:var(--blackDef) ;
-    background-color:var(--blackDef_BG) ;
-}
-.hoverFocus{
-    background-color: var(--blackDef_BG_hover);
-}
+p{font-size: 14px;}
+.btn{box-shadow:0 0 5px rgba(0, 0, 0, 0.3) ;}
+.disabledShadow{box-shadow: 0 0 0 !important;}
+.btn-text-light{color: #3D5AFE;font-weight: 500;}
+.btn-text-light:hover{background-color: #2962ff31;color: #3D5AFE;}

@@ -1,19 +1,24 @@
-import './Button.css'
+import "./Button.css";
 interface Props {
   color?: string;
+  disableShadow?:boolean;
   name?: string;
   variant?: string;
+
 }
 
-function Button({name = "Default"}: Props) {
+function Button({ name = "Default", color = "light", variant = "",disableShadow=false }: Props) {
+  variant !== "" ? (variant = variant + "-" + color ) : (variant = color);
+  disableShadow ? variant=variant+" disabledShadow":variant;
+  var description = 'color="'+color+'"';
+
+
   return (
     <>
-
-    <div>
-      <button >{name}</button>
-      <button className="ms-5 hoverFocus">{name}</button>
-    </div>
-    
+      <div className="mb-3 ms-5">
+        <p>{"<Button "+description+" />"}</p>
+        <button className={"btn btn-" + variant}>{name}</button>
+      </div>
     </>
   );
 }
