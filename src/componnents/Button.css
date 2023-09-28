@@ -1,0 +1,12 @@
+:root{
+    --blackDef :#3F3F3F ;
+    --blackDef_BG :#E0E0E0 ;
+    --blackDef_BG_hover :#AEAEAE ;
+}
+.btn{
+    color:var(--blackDef) ;
+    background-color:var(--blackDef_BG) ;
+}
+.hoverFocus{
+    background-color: var(--blackDef_BG_hover);
+}
