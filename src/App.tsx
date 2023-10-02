@@ -1,21 +1,11 @@
-import Button from "./componnents/Button";
+import NavBar from "./componnents/NavBar/component/NavBar";
+import Main from "./componnents/main/component/Main";
 
 function App() {
   return (
-    <div>
-      <h1 className="mb-5">Buttons</h1>
-        <Button />
-        <Button color="primary" variant="outline" disableShadow={true} />
-        <Button variant="text" />
-        <Button color = "primary"  disableShadow={true} />
-
-
-      <div className="d-flex ">
-        <Button />
-        <Button color="secondary" />
-        <Button color="primary" />
-        <Button color="danger" />
-      </div>
+    <div className="d-flex">
+      <NavBar />
+      <Main />
     </div>
   );
 }

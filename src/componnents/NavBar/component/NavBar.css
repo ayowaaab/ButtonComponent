@@ -1,0 +1,18 @@
+nav {background-color: #FAFBFD;}
+h5 span {
+  color: #f7542e;
+}
+.MyList {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 3rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.MyList li {
+  list-style: none;
+}
+.MyList li:hover {
+    color: gray;
+}
