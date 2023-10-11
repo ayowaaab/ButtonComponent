@@ -1,18 +1,25 @@
 nav {background-color: #FAFBFD;}
-h5 span {
-  color: #f7542e;
+h5 span ,#Header span{
+  color: #f7542e;padding:0 .25rem;
 }
 .MyList {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  gap: 3rem;
-  justify-content: center;
-  cursor: pointer;
+  gap: 2rem;
+  padding-top: 5rem;
 }
 .MyList li {
+  cursor: pointer;
   list-style: none;
+  opacity: .5;
 }
 .MyList li:hover {
-    color: gray;
+  opacity: .8;
 }
+
+
+#Header{
+  display: flex;justify-content: center;align-items: center;width: 100%;
+}
+.active{font-weight: 700;opacity: 0.8!important;color: black;}

@@ -1,0 +1,11 @@
+.input{
+    padding: .75rem!important;
+    border-radius: 15px;outline: none;border: 1px solid grey;
+}
+.input:hover{
+    border: 1px solid black;   
+}
+.input:focus{
+    border: 1px solid blue;   
+}
+
