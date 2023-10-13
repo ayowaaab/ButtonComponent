@@ -4,13 +4,9 @@ import Main from "./componnents/main/component/Main";
 
 function App() {
   const [selectedNav, setSelectedNav] = useState("Home");
-  const handelClick = (x: string) => {
-    setSelectedNav(x);
-  };
-
   return (
     <div className="d-flex">
-      <NavBar onClickMe={handelClick} typeOne={selectedNav} />
+      <NavBar onClickMe={(x)=>setSelectedNav(x)} typeOne={selectedNav} />
       <Main navType={selectedNav} />
     </div>
   );
